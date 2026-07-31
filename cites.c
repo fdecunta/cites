@@ -140,6 +140,6 @@ void usage(void) {
 	puts("  file  Paper in plain text. Read from stdin if absent");
 	puts("  -n    Print line where cite starts");
 	puts("\nExample: ");
-	puts("pandoc -t Paper.docx | cites -n");
+	puts("pandoc -t plain Paper.docx | cites -n");
 	return;
 }
