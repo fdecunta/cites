@@ -1,15 +1,13 @@
-# CITES(1)
-
-## NAME
-**cites** — extract parenthetical citations from plain text
+## cites
+Extract parenthetical citations from plain text
 
 ## SYNOPSIS
 **cites** \[**-n**\] \[*file*\]
 
 ## DESCRIPTION
-**cites** scans a plain text file for parenthetical citations, such as `(Smith 2020)`, and prints each one found.
+**cites** scans a plain text file for parenthetical citations, such as `(Foo 2020)`, and prints each one found.
 
-If *file* is omitted, **cites** reads from standard input.
+If *file* is omitted, reads from standard input.
 
 ## OPTIONS
 **-n**
@@ -25,10 +23,3 @@ Convert a Word document with pandoc and scan the result, showing line numbers:
 ```
 pandoc -t plain paper.docx | cites -n
 ```
-
-## EXIT STATUS
-**0** on success, **1** if the file cannot be opened or arguments are invalid.
-
-## AUTHOR
-Written for personal citation-checking workflows.
-# cites
