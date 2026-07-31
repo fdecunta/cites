@@ -87,8 +87,10 @@ void scan_cites(FILE *fp) {
 
 			if (!parflag) {
 				buffer[len] = '\0';
-				if (is_cite(buffer)) {
+				if (is_cite(buffer) == 1) {
 					print_cite(cite_line, buffer);
+				} else if (is_cite(buffer) == -1) {
+					return;
 				}
 				memset(buffer, '\0', MAX_BUF);
 				len = 0;
